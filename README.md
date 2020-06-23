@@ -1,9 +1,9 @@
 # Jogo da Memória (em desenvolvimento)
-
-[LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)
+=====================================================================
 
 ## Ideia da página inicial
 ![index.html](public/src/paginainicial.png)
+[LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)
 
 ## Tecnologias (por enquanto)
 
@@ -33,4 +33,4 @@ O objetivo no entanto continua o mesmo: Conseguir todos os pares. A pontuação 
 
 * Informações sobre as cartas - Vai ter o nome do que tá na carta e uma curiosidade sobre ela
 
-Desenvolvido 100% por @AuroraDark :) 
+**Autor: [@AuroraDark](https://github.com/AuroraDark) :)** 
