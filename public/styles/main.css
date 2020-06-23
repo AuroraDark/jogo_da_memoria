@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+#jogo p {
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #000000;
+}
+
+header nav a{
+    width: 20px;
+    height: 20px;
+    /* padding: 20px; */
+    margin-right: 24px;
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    color:azure;  
+
+}
+
+header h1 {
+    margin-left: 24px;
+    font-size: 35px;
+    line-height: 42px;
+    color: azure;
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+}
+body{
+    background-color: #3A3A3A;
+    justify-items: center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: #C4C4C4;
+    
+}
+footer ul{
+    margin: 24px;
+    display: inline-block;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer ul h3{
+    text-decoration: none;
+    color: #C4C4C4;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer ul img {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+footer ul a img:hover {
+    background-color: teal;
+}
+
+#jogo div {
+    padding: 30px;
+    margin: 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 200px;
+    border-radius: 0px 30px 0px 30px;
+    
+}
+
+#jogo {
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 10px;
+    top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: #3A3A3A;
+
+}
+
+.corpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#esq, #dir{  
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+
+}
+
+#esq h2 {
+    margin: 24px 10px 10px 24px;
+}
+
+#esq span {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
