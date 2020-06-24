@@ -4,12 +4,6 @@
     box-sizing:border-box;
 }
 
-#jogo p {
-    color: white;
-    font-family: 'Righteous', cursive;
-    font-size: 24px;
-    
-}
 
 header {
     display: flex;
@@ -87,12 +81,10 @@ footer ul a img:hover {
     justify-content: center;
     width: 150px;
     height: 160px;
-    border-radius: 0px 30px 0px 30px;
-    
+    border-radius: 0px 30px 0px 30px; 
 }
 
 #jogo {
-    /* justify-content: space-between; */
     align-items: center;
     margin: 10px;
     top: 24px;

@@ -1,0 +1,17 @@
+#jogo .card img{
+    width:100px; 
+    height:100px;
+}
+
+#jogo .nao-virado {
+    background-color:#C4C4C4;
+}
+
+#jogo .virado {
+
+}
+
+#jogo .no-card {
+    border-radius: 0px;
+    background-color: #3A3A3A;
+}
