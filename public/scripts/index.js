@@ -32,38 +32,74 @@
 let deck = [
     {   
         id: 1,
-        name: "Vermelho",
-        color: "#FA8484",
+        name: "Sapo",
+        color: "#84CFFA",
+        imagem: "https://image.flaticon.com/icons/svg/3069/3069170.svg",
+        descricao: [
+            "descricao 1",
+            "descricao 2",
+            "descricao 3"
+            ],
         virado: true
     },
     {   
         id: 2,
-        name: "Azul",
-        color: "#84ACFA",
+        name: "Vaca",
+        color: "#FA8484",
+        imagem: "https://image.flaticon.com/icons/svg/3069/3069162.svg",
+        descricao: [
+        "descricao 1",
+        "descricao 2",
+        "descricao 3"
+        ],
         virado: true
     },
     {   
         id: 3,
-        name: "Verde",
-        color: "#43C476",
+        name: "Canguru",
+        color: "#E984FA",
+        imagem: "https://image.flaticon.com/icons/svg/3069/3069163.svg",
+        descricao: [
+            "descricao 1",
+            "descricao 2",
+            "descricao 3"
+            ],
         virado: true
     },
     {   
         id: 4,
-        name: "Laranja",
-        color: "orange",
+        name: "Leão",
+        color: "#84FAAC",
+        imagem: "https://image.flaticon.com/icons/svg/3069/3069169.svg",
+        descricao: [
+            "descricao 1",
+            "descricao 2",
+            "descricao 3"
+            ],
         virado: true
     },
     {   
         id: 5,
-        name: "Amarelo",
-        color: "black",
+        name: "Pássaro",
+        color: "#8684FA",
+        imagem: "https://image.flaticon.com/icons/svg/3069/3069186.svg",
+        descricao: [
+            "descricao 1",
+            "descricao 2",
+            "descricao 3"
+            ],
         virado: true
     },
     {
         id: 6,
-        name: "Roxo",
-        color: "#7929c2",
+        name: "Elefante",
+        color: "#F7FA84",
+        imagem: "https://image.flaticon.com/icons/svg/3069/3069224.svg",
+        descricao: [
+            "descricao 1",
+            "descricao 2",
+            "descricao 3"
+            ],
         virado: true
     }
 
@@ -80,7 +116,7 @@ const jogo = document.getElementById("jogo")
 
         deck.forEach(card => {
             $(document).ready(function(){
-                $(`<div id="${card.id}" style="background-color:${card.color}"><p>${card.name}</p></div>`).appendTo("#jogo");
+                $(`<div id="${card.id}" style="background-color:${card.color}"><img src="${card.imagem}" alt="${card.name}" width="100px" height="100px"></div>`).appendTo("#jogo");
             });                
         })
 

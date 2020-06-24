@@ -86,7 +86,7 @@ footer ul a img:hover {
     align-items: center;
     justify-content: center;
     width: 150px;
-    height: 200px;
+    height: 160px;
     border-radius: 0px 30px 0px 30px;
     
 }
@@ -127,4 +127,12 @@ footer ul a img:hover {
     background-color: black;
     color: white;
     font-size: 18px;
+}
+
+#btn-mudartema, #btn-reiniciar {
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
 }
