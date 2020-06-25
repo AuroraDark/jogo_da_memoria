@@ -42,7 +42,7 @@ footer {
     background-color: black;
     text-align: center;
     color: #C4C4C4;
-    
+    margin-bottom: auto;
 }
 footer ul{
     margin: 24px;
@@ -72,32 +72,12 @@ footer ul a img:hover {
     background-color: teal;
 }
 
-#jogo div {
-    padding: 30px;
-    margin: 15px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 160px;
-    border-radius: 0px 30px 0px 30px; 
-}
 
-#jogo {
-    align-items: center;
-    margin: 10px;
-    top: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    background-color: #3A3A3A;
-
-}
 
 .corpo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 
 #esq, #dir{  

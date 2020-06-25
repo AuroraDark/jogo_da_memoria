@@ -1,0 +1,39 @@
+@media (max-width: 900px){
+    .jogo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .corpo {
+        justify-content: center;
+    }
+
+    footer {
+        min-width: 100%;
+    }
+
+    #dir {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+    #esq {
+        display: none;
+    }
+
+    .jogo {
+        margin: 10vw;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .jogo .card {
+         width: 27vw;
+    
+    }
+
+}

@@ -9,8 +9,7 @@
 
 O objetivo desse projeto é que ele seja desenvolvido 100% no frontend, com base no Javascript
 
-*HTML, CSS e Javascript
-*JQuery
+* HTML, CSS e Javascript
 
 ## Sobre
  

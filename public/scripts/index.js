@@ -1,32 +1,4 @@
-function embaralha(vetorCards) {
-  let cards = vetorCards;
-  let aleatorio1 = Math.random() * Math.pow(cards.length / 2, 2) + cards.length;
-  aleatorio1 = aleatorio1.toFixed(0);
-
-  for (let i = 0; i <= aleatorio1; i++) {
-    for (let index = 0; index < cards.length - 1; index++) {
-      // console.log('i: ',i)
-      let temp;
-      let troca = (Math.random() * 1).toFixed(0);
-      // console.log('index: ',index)
-      // console.log('troca: ',troca)
-      if (troca == 1) {
-        temp = cards[index];
-        // console.log('temporaria: ',temp)
-        cards[index] = cards[index + 1];
-        // console.log('cards[index]: ',cards[index])
-        cards[index + 1] = temp;
-        // console.log('cards[index+1]: ',cards[index+1])
-        // console.log('CARDS: ',cards)
-      }
-      // console.log('===============================')
-    }
-  }
-
-  return cards;
-}
-
-//console.log(embaralha(paresOrdenados))
+//Deck
 
 let deck = [
   {
@@ -79,77 +51,114 @@ let deck = [
   },
 ];
 
+//Função para embaralhar
+function embaralha(vetorCards) {
+  let cards = vetorCards;
+  let aleatorio1 = Math.random() * Math.pow(cards.length / 2, 2) + cards.length;
+  aleatorio1 = aleatorio1.toFixed(0);
+
+  for (let i = 0; i <= aleatorio1; i++) {
+    for (let index = 0; index < cards.length - 1; index++) {
+      let temp;
+      let troca = (Math.random() * 1).toFixed(0);
+
+      if (troca == 1) {
+        temp = cards[index];
+
+        cards[index] = cards[index + 1];
+
+        cards[index + 1] = temp;
+      }
+    }
+  }
+  return cards;
+}
+
 deckId = deck;
 deck = deck.concat(deck);
 embaralha(deck);
 
-/* deck.forEach((card) => {
-  console.log(card.id, card.name, card.color);
-}); */
 
-deck.forEach((card) => {
-  $(document).ready(function () {
-    $(
-      `<div card class="nao-virado" id="${card.id}"><img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" alt="card" width="100px" height="100px"></div>`
-    ).appendTo("#jogo");
-  });
-});
+// deck.forEach((card) => {
+//   $(document).ready(function () {
+//     $(
+//       `<div class="card" id="${card.id}"><img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" alt="card" width="100px" height="100px"></div>`
+//     ).appendTo("#jogo");
+//   });
+// });
 
-/*         deck.forEach(card => {
-            $(document).ready(function(){
-                $(`<div class= "card" class="virado" id="${card.id}" style="background-color:${card.color}"><img src="${card.imagem}" alt="${card.name}" width="100px" height="100px"></div>`).appendTo("#jogo");
-            });    
-        })
- */
-let cardsOpen = [];
+const cards = document.querySelectorAll('.card');
 
-//Funções para executar com o clique
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
 
-$(document).ready(function () {
-  $(".nao-virado").click(function () {
-    let CardId = $(this).attr("id");
-    const cardsNone = [];
-    if (cardsOpen.length > 2) {
-      cardsOpen.pop();
+function flipCard() {
+  //this.classList.toggle('flip');
+  if (lockBoard) return;
+  if (this === firstCard) return;
+
+  this.classList.add('flip');
+
+   if (!hasFlippedCard) {
+     hasFlippedCard = true;
+     firstCard = this;
+     return;
     }
-    if (cardsOpen.length <= 1) {
-      cardsOpen.push(CardId);
-      $(this).replaceWith(
-        `<div card open${
-          cardsOpen.length
-        } class="virado" id="${CardId}" style="background-color:${
-          deckId[CardId - 1].color
-        }"><img src="${
-          deckId[CardId - 1].imagem
-        }" alt="card" width="100px" height="100px"></div>`
-      );
-    } else if (cardsOpen[1] != undefined) {
-      if (cardsOpen[0] == cardsOpen[1]) {
-        console.log("entrou");
-        $(".virado").replaceWith(
-          `<div nada class="no-card" id="0"><img src="src/nada.svg" alt="card" width="100px" height="100px"></div>`
-        );
-        cardsOpen = cardsNone;
-      } else if (cardsOpen.length <= 2) {
-        let cardsOpen2 = cardsOpen;
-        $("[open1]")
-          .delay(1000)
-          .replaceWith(
-            `<div card class="nao-virado" id="${cardsOpen2[0]}"><img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" alt="card" width="100px" height="100px"></div>`
-          );
-        $("[open2]")
-          .delay(1000)
-          .replaceWith(
-            `<div card class="nao-virado" id="${cardsOpen2[1]}"><img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" alt="card" width="100px" height="100px"></div>`
-          );
-        cardsOpen = cardsNone;
-        console.log(cardsOpen);
-      }
+ 
+    secondCard = this;
+ 
+    checkForMatch();
+}
+ 
+  //Conferindo se é igual
+
+  function checkForMatch() {
+    if (firstCard.dataset.nome === secondCard.dataset.nome) {
+      disableCards();
+      return;
     }
-    console.log(
-      `CO1 = ${cardsOpen[0]}, CO2 = ${cardsOpen[1]}, length=${cardsOpen.length}`
-    );
-    //   console.log(cardsOpen[1]);
-    console.log(cardsOpen);
-  });
-});
+ 
+    unflipCards();
+  }
+ 
+  //Desabilitando o clique nas cartas viradas
+
+  function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+
+    resetBoard();
+  }
+ 
+  //Virando as cartas erradas de volta
+
+  function unflipCards() {
+    lockBoard = true;
+
+    setTimeout(() => {
+      firstCard.classList.remove('flip');
+      secondCard.classList.remove('flip');
+
+      resetBoard();
+
+    }, 1500);
+  }
+
+  function resetBoard() {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+  }
+
+  //Embaralhando cartas (IIFE) Vai ser executada assim que for lida
+
+  (function shuffle() {
+    cards.forEach(card => {
+      let ramdomPos = Math.floor(Math.random() * 12);
+      card.style.order = ramdomPos;
+    });
+  })();
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+
+
