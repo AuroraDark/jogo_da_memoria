@@ -31,6 +31,12 @@
 
 @media (max-width: 550px) {
 
+    header nav a {
+
+        display: none;
+
+    }
+
     .jogo .card {
          width: 27vw;
     
