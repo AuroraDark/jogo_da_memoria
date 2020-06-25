@@ -1,6 +1,8 @@
 # Jogo da Memória (em desenvolvimento)
 =====================================================================
 
+> **[CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
+
 ## Ideia da página inicial
 ![index.html](public/src/paginainicial.png)
 [LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)
@@ -29,7 +31,5 @@ O objetivo no entanto continua o mesmo: Conseguir todos os pares. A pontuação 
 * Mudar tema - Sim, isso mesmo kkkkk eu **pretendo** colocar temas, então digamos que é só um insight por enquanto.
 
 * Reiniciar - Cansou dessa partida? Não tem problema. Só jogar outra!
-
-* Informações sobre as cartas - Vai ter o nome do que tá na carta e uma curiosidade sobre ela
 
 **Autor: [@AuroraDark](https://github.com/AuroraDark) :)** 
