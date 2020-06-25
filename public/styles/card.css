@@ -3,13 +3,9 @@
     height:100px;
 }
 
-#jogo .nao-virado {
+#jogo .nao-virado, #jogo .nao-virado-new {
     background-color:#C4C4C4;
-}
-
-#jogo .virado {
-
-}
+} 
 
 #jogo .no-card {
     border-radius: 0px;
