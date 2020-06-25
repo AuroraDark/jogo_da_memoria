@@ -76,15 +76,20 @@ footer ul a img:hover {
 
 .corpo {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
 }
 
 #esq, #dir{  
-    background-color: white;
+    background-color: azure;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
 
+}
+
+#dir {
+    background-color: black;
+    display: none;
 }
 
 #esq h2 {
@@ -97,14 +102,18 @@ footer ul a img:hover {
     padding-right: 10px;
     border-radius: 30px;
     background-color: black;
-    color: white;
+    color: azure;
     font-size: 18px;
 }
 
 #btn-mudartema, #btn-reiniciar {
     text-align: center;
     text-decoration: none;
-    background-color: white;
+    background-color: azure;
     color: black;
     border: 2px solid #4CAF50; /* Green */
+}
+
+#responsivo {
+    display: none;
 }

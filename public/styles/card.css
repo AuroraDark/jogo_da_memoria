@@ -1,75 +1,92 @@
 .jogo div {
-    padding: 30px;
-    margin: 15px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 160px;
-    border-radius: 0px 30px 0px 30px; 
+  padding: 30px;
+  margin: 15px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17vw;
+  height: 160px;
+  border-radius: 0px 30px 0px 30px;
 }
 
 .jogo {
-    align-items: center;
-    margin: 10px;
-    top: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    background-color: #3A3A3A;
-
+  align-items: center;
+  /* margin: 10px; */
+  /* top: 24px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  background-color: #3a3a3a;
 }
 
-.jogo .card img{
-    width:100px; 
-    height:100px;
-    border-radius: 30px 30px 30px 30px;
+.jogo .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px 30px 30px 30px;
 }
 
-.jogo .card, .jogo .virado{
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    transition: transform .5s;
-} 
+.jogo .card,
+.jogo .virado {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
 
-.jogo .card{
-    background-color:#C4C4C4;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-} 
-
+.jogo .card {
+  background-color: #c4c4c4;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
 
 .card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
+  transform: scale(0.97);
+  transition: transform 0.2s;
 }
 
 .card.flip {
-    transform: rotateY(180deg);
-  }
+  transform: rotateY(180deg);
+}
 
+.card.flip[data-nome="sapo"],
+.card.flip[data-nome="sapo"] img {
+  background-color: #84cffa;
+}
+
+.card.flip[data-nome="vaca"],
+.card.flip[data-nome="vaca"] img {
+  background-color: #FA8484;
+}
+
+.card.flip[data-nome="canguru"],
+.card.flip[data-nome="canguru"] img {
+  background-color: #E984FA;
+}
+
+.card.flip[data-nome="leao"],
+.card.flip[data-nome="leao"] img {
+  background-color: #84FAAC;
+}
+
+.card.flip[data-nome="passaro"],
+.card.flip[data-nome="passaro"] img {
+  background-color: #8684FA;
+}
+
+.card.flip[data-nome="elefante"],
+.card.flip[data-nome="elefante"] img {
+  background-color: #F7FA84;
+}
 /* novas */
 
-.jogo {
-    /* width: calc(25% - 10px);
-    height: calc(33.333% - 10px); */
-    margin: 5px;
-    /* position: relative; */
-    
-  }
-  
-  .frente,
-  .verso {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    position: absolute;
-    /* border-radius: 5px; */
-    background: #C4C4C4;
-    backface-visibility: hidden;
-    
-  }
+.frente,
+.verso {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  position: absolute;
+  backface-visibility: hidden;
+}
 
-  .frente {
-    transform: rotateY(180deg);
-  }
+.frente {
+  transform: rotateY(180deg);
+}

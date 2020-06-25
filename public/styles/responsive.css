@@ -1,4 +1,5 @@
 @media (max-width: 900px){
+
     .jogo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -10,7 +11,7 @@
     }
 
     footer {
-        min-width: 100%;
+        height: auto;
     }
 
     #dir {
@@ -24,9 +25,40 @@
         display: none;
     }
 
-    .jogo {
-        margin: 10vw;
+    #responsivo {
+        display: flex;
+        background-color: azure;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 12px;
+        text-align: center;
     }
+
+    #responsivo span {
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 30px;
+        background-color: black;
+        color: azure;
+        font-size: 12px;
+    }
+
+    #responsivo h2 {
+        margin: 10px;
+        margin-left: 24px;
+    }
+
+    .jogo {
+        margin: 0px 10vw 0px 10vw;
+    }
+
+    .jogo .card {
+        width: 27vw;
+        height: 17vh;
+   
+   }
+   
+
 }
 
 @media (max-width: 550px) {
@@ -38,8 +70,8 @@
     }
 
     .jogo .card {
-         width: 27vw;
-         height: 15vh;
+         width: 24vw;
+         height: 16vh;
     
     }
 
@@ -48,4 +80,17 @@
         height:80px;
     }
 
+}
+
+@media (min-height: 760px) {
+
+    .jogo .card {
+        height: 25vh;
+    }
+    
+    .jogo .card img {
+        width:150px; 
+        height:150px;
+    }
+    
 }
