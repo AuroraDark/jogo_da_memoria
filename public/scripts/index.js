@@ -87,8 +87,6 @@ embaralha(deck);
   console.log(card.id, card.name, card.color);
 }); */
 
-const jogo = document.getElementById("jogo");
-
 deck.forEach((card) => {
   $(document).ready(function () {
     $(
