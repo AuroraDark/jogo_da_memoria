@@ -80,6 +80,8 @@ function flipCard() {
 
   function checkForMatch() {
     movements++;
+    document.getElementById("movimentos").innerHTML = `${movements}`;
+    document.getElementById("movimentos2").innerHTML = `${movements}`;
 
     if (firstCard.dataset.nome === secondCard.dataset.nome) {
       disableCards();
@@ -90,8 +92,6 @@ function flipCard() {
 
     console.log(movements);
 
-    document.getElementById("movimentos").innerHTML = `${movements}`;
-    document.getElementById("movimentos2").innerHTML = `${movements}`;
   }
  
   //Desabilitando o clique nas cartas viradas
