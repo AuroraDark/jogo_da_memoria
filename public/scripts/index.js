@@ -51,47 +51,12 @@ let deck = [
   },
 ];
 
-//Função para embaralhar
-function embaralha(vetorCards) {
-  let cards = vetorCards;
-  let aleatorio1 = Math.random() * Math.pow(cards.length / 2, 2) + cards.length;
-  aleatorio1 = aleatorio1.toFixed(0);
-
-  for (let i = 0; i <= aleatorio1; i++) {
-    for (let index = 0; index < cards.length - 1; index++) {
-      let temp;
-      let troca = (Math.random() * 1).toFixed(0);
-
-      if (troca == 1) {
-        temp = cards[index];
-
-        cards[index] = cards[index + 1];
-
-        cards[index + 1] = temp;
-      }
-    }
-  }
-  return cards;
-}
-
-deckId = deck;
-deck = deck.concat(deck);
-embaralha(deck);
-
-
-// deck.forEach((card) => {
-//   $(document).ready(function () {
-//     $(
-//       `<div class="card" id="${card.id}"><img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" alt="card" width="100px" height="100px"></div>`
-//     ).appendTo("#jogo");
-//   });
-// });
-
 const cards = document.querySelectorAll('.card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let movements = 0;
 
 function flipCard() {
   //this.classList.toggle('flip');
@@ -114,12 +79,19 @@ function flipCard() {
   //Conferindo se é igual
 
   function checkForMatch() {
+    movements++;
+
     if (firstCard.dataset.nome === secondCard.dataset.nome) {
       disableCards();
       return;
     }
  
     unflipCards();
+
+    console.log(movements);
+
+    document.getElementById("movimentos").innerHTML = `${movements}`;
+    document.getElementById("movimentos2").innerHTML = `${movements}`;
   }
  
   //Desabilitando o clique nas cartas viradas
