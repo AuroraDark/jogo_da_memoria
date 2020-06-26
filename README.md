@@ -18,8 +18,6 @@
 ![desktop](public/src/paginidesktop.png)
 
 ### Celular
-![celular](public/src/paginicelular.jpeg)
-
 ![celular-gif](public/src/gif.gif)
 
 =======
