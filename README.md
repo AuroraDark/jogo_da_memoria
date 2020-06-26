@@ -12,7 +12,6 @@
 - [ ] Botão para reiniciar o jogo
 - [ ] Botão para mudar tema (EM BREVE)
 
-<<<<<<< HEAD
 ## Prints
 
 ### Desktop
