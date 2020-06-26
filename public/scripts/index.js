@@ -57,6 +57,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 let movements = 0;
+let winContador = 0;
 
 function flipCard() {
   //this.classList.toggle('flip');
@@ -70,7 +71,9 @@ function flipCard() {
      firstCard = this;
      return;
     }
- 
+
+    console.log(winContador)
+     
     secondCard = this;
  
     checkForMatch();
@@ -79,13 +82,15 @@ function flipCard() {
   //Conferindo se é igual
 
   function checkForMatch() {
-    movements++;
     document.getElementById("movimentos").innerHTML = `${movements}`;
     document.getElementById("movimentos2").innerHTML = `${movements}`;
 
     if (firstCard.dataset.nome === secondCard.dataset.nome) {
+      winContador++;
       disableCards();
       return;
+    }else {
+      movements++;
     }
  
     unflipCards();
