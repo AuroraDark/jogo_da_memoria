@@ -32,12 +32,12 @@ $(document).ready(function () {
         $("[open1]")
           .delay(1000)
           .replaceWith(
-            `<div card class="card" id="${cardsOpen2[0]}"><img src="https://cdn.icon-icons.com/icons2/193/PNG/256/The_Real_Empire_23238.png" alt="card" width="100px" height="100px"></div>`
+            `<div card class="card" id="${cardsOpen2[0]}"><img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" alt="card" width="100px" height="100px"></div>`
           );
         $("[open2]")
           .delay(1000)
           .replaceWith(
-            `<div card class="card" id="${cardsOpen2[1]}"><img src="https://cdn.icon-icons.com/icons2/193/PNG/256/The_Real_Empire_23238.png" alt="card" width="100px" height="100px"></div>`
+            `<div card class="card" id="${cardsOpen2[1]}"><img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" alt="card" width="100px" height="100px"></div>`
           );
         cardsOpen = cardsNone;
         console.log(cardsOpen);
