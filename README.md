@@ -20,6 +20,8 @@
 ### Celular
 ![celular](public/src/paginicelular.jpeg)
 
+![celular-gif](public/src/gif.gif)
+
 =======
 ## Print da página inicial do figma
 ![index.html](public/src/paginainicial.png)
