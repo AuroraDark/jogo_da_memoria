@@ -82,14 +82,16 @@ function flipCard() {
   //Conferindo se é igual
 
   function checkForMatch() {
+    if(firstCard.dataset.nome !== secondCard.dataset.nome) {
+      movements++;
+    }
+    document.getElementById("movimentos").innerHTML = `${movements}`;
+    document.getElementById("movimentos2").innerHTML = `${movements}`;
+      
     if (firstCard.dataset.nome === secondCard.dataset.nome) {
       winContador++;
       disableCards();
       return;
-    }else {
-      movements++;
-      document.getElementById("movimentos").innerHTML = `${movements}`;
-      document.getElementById("movimentos2").innerHTML = `${movements}`;
     }
 
  
