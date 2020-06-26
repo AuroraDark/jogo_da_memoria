@@ -1,8 +1,8 @@
 # Jogo da Memória (em desenvolvimento)
-=====================================================================
+
 ## Etapas do projeto
 
-- [x] Design no figma [LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)
+- [x] Design no figma **[-> LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)**
 - [x] Design na página (HTML e CSS)
 - [x] Design das cartas (HTML E CSS)
 - [x] Lógica do jogo (Javascript)(o jogo está funcionando!!)
@@ -32,7 +32,7 @@ Bom, nesse caso o jogo é **quase** assim. A única diferença é que você joga
 
 * Mudar tema - Sim, isso mesmo kkkkk eu **pretendo** colocar temas, então digamos que é só um insight por enquanto.
 
-# OBRIGADA :D
+## OBRIGADA :D
 
 **Agradeço a todos que testaram e me deram novas ideias, com base nelas fiz e continuo fazendo alterações no projeto inicial para melhorar a experiência do jogador!** 
 
