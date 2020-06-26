@@ -1,4 +1,4 @@
-# Jogo da Memória (em desenvolvimento)
+# Jogo da Memória 
 
 ## Etapas do projeto
 
