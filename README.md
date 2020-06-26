@@ -24,7 +24,6 @@
 ## Print da página inicial do figma
 ![index.html](public/src/paginainicial.png)
 
->>>>>>> f7f366908939bc3faed81e2931fd69f3ff5452d8
 ## Tecnologias (100% front-end)
 
 * HTML, CSS e Javascript
