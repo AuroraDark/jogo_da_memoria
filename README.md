@@ -2,14 +2,14 @@
 =====================================================================
 ## Etapas do projeto
 
-[x] Design no figma [LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)
-[x] Design na página (HTML e CSS)
-[x] Design das cartas (HTML E CSS)
-[x] Lógica do jogo (Javascript)(o jogo está funcionando!!)
-[x] Site no AR  **[-> CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
-[] Exibir mensagem de vitória
-[] Botão para reiniciar o jogo
-[] Botão para mudar tema (EM BREVE)
+- [x] Design no figma [LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)
+- [x] Design na página (HTML e CSS)
+- [x] Design das cartas (HTML E CSS)
+- [x] Lógica do jogo (Javascript)(o jogo está funcionando!!)
+- [x] Site no AR  **[-> CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
+- [ ] Exibir mensagem de vitória
+- [ ] Botão para reiniciar o jogo
+- [ ] Botão para mudar tema (EM BREVE)
 
 ## Print da página inicial do figma
 ![index.html](public/src/paginainicial.png)
