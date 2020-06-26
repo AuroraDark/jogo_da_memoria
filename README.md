@@ -1,15 +1,26 @@
-# Jogo da Memória (em desenvolvimento)
-=====================================================================
+# Jogo da Memória 
 
-> **[CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
+## Etapas do projeto
 
-## Ideia da página inicial
-![index.html](public/src/paginainicial.png)
-[LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)
+- [x] Design no figma **[-> LINK DO DESIGN NO FIGMA](https://www.figma.com/file/x71PJgN77PFRs6JRUFQwFa/Jogo-da-Mem%C3%B3ria?node-id=0%3A1)**
+- [x] Design na página (HTML e CSS)
+- [x] Design das cartas (HTML E CSS)
+- [x] Lógica do jogo (Javascript)(o jogo está funcionando!!)
+- [x] Site no AR  **[-> CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
+- [x] Layout responsivo
+- [ ] Exibir mensagem de vitória
+- [ ] Botão para reiniciar o jogo
+- [ ] Botão para mudar tema (EM BREVE)
 
-## Tecnologias (por enquanto)
+## Prints
 
-O objetivo desse projeto é que ele seja desenvolvido 100% no frontend, com base no Javascript
+### Desktop
+![desktop](public/src/paginidesktop.png)
+
+### Celular
+![celular](public/src/paginicelular.jpeg)
+
+## Tecnologias (100% front-end)
 
 * HTML, CSS e Javascript
 
@@ -21,15 +32,14 @@ O objetivo desse projeto é que ele seja desenvolvido 100% no frontend, com base
 
 Bom, nesse caso o jogo é **quase** assim. A única diferença é que você joga **contra si mesmo**.
 
-### Como funciona?
-
-O jogador tem uma quantidade **limitada** de jogadas. Se exceder essa quantidade ele perderá o jogo. 
-O objetivo no entanto continua o mesmo: Conseguir todos os pares. A pontuação varia de acordo com a quantidade de **erros**.
-
 ### Alguns recursos da interface...
+
+* Você poderá ver a quantidade de erros e comparar com os outros jogadores
 
 * Mudar tema - Sim, isso mesmo kkkkk eu **pretendo** colocar temas, então digamos que é só um insight por enquanto.
 
-* Reiniciar - Cansou dessa partida? Não tem problema. Só jogar outra!
+## OBRIGADA :D
+
+**Agradeço a todos que testaram e me deram novas ideias, com base nelas fiz e continuo fazendo alterações no projeto inicial para melhorar a experiência do jogador!** 
 
 **Autor: [@AuroraDark](https://github.com/AuroraDark) :)** 
