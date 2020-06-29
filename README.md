@@ -9,7 +9,7 @@
 - [x] Site no AR  **[-> CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
 - [x] Layout responsivo
 - [ ] Exibir mensagem de vitória
-- [ ] Botão para reiniciar o jogo
+- [x] Botão para reiniciar o jogo
 - [ ] Botão para mudar tema (EM BREVE)
 
 ## Prints

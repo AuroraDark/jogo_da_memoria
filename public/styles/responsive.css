@@ -29,7 +29,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: azure;
+        background-color: white;
         font-family: 'Ubuntu', sans-serif;
         font-size: 12px;
         text-align: center;
@@ -41,7 +41,7 @@
         padding-right: 8px;
         border-radius: 30px;
         background-color: black;
-        color: azure;
+        color: white;
         font-size: 15px;
     }
 
