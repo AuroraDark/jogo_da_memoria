@@ -10,14 +10,14 @@
 - [x] Layout responsivo
 - [ ] Exibir mensagem de vitória
 - [x] Botão para reiniciar o jogo
-- [ ] Botão para mudar tema (EM BREVE)
+- [ ] Botão para mudar tema **(EM BREVE)**
 
 ## Prints
 
-### Desktop
+### Desktop (imagem desatualizada, agora possui botão de reiniciar!)
 ![desktop](public/src/paginidesktop.png)
 
-### Celular
+### Celular (gif desatualizado, agora possui botão de reiniciar!)
 ![celular-gif](public/src/gif.gif)
 
 =======
