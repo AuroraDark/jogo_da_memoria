@@ -27,6 +27,8 @@
 
     #responsivo {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         background-color: azure;
         font-family: 'Ubuntu', sans-serif;
         font-size: 12px;
@@ -40,12 +42,27 @@
         border-radius: 30px;
         background-color: black;
         color: azure;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     #responsivo h2 {
         margin: 5px;
         margin-left: 24px;
+    }
+
+    #responsivo a {
+        
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 10px;
+        margin: 5px;
+        margin-right: 24px;
+        border-radius: 10px;
+
     }
 
     .jogo {

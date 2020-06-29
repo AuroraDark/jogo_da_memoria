@@ -80,20 +80,43 @@ footer ul a img:hover {
     justify-content: center;
 }
 
-#esq, #dir{  
+#esq {  
     background-color: azure;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-}
-
-#dir {
-    background-color: black;
-    display: none;
 }
 
 #esq h2 {
-    margin: 24px 10px 10px 24px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 24px;
+
+}
+
+#esq a {
+    
+    width: min-content;
+    height: min-content;
+    text-decoration: none;
+    background-color: black;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    margin-bottom: 20vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color:white;
+    
+}
+
+#esq a:hover {
+    background-color: teal;
 }
 
 #esq span {
