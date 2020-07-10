@@ -1,4 +1,5 @@
 # Jogo da Memória 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a556471-9373-4438-b1e6-db6f2ad7d386/deploy-status)](https://app.netlify.com/sites/auroradark-jogodamemoria/deploys)
 
 ## Etapas do projeto
 
