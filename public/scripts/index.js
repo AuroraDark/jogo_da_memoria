@@ -91,6 +91,14 @@ function flipCard() {
     if (firstCard.dataset.nome === secondCard.dataset.nome) {
       winContador++;
       disableCards();
+      //ALTERAÇÃO* Confere se o "winContador" é igual a "6", que é o número máximo de vitórias que pode haver no jogo!
+      if(winContador == 6) {
+        setTimeout(() => {
+          document.querySelector('#vitoria').style.display = 'block'
+          document.querySelector('#movimentosvitoria').innerHTML = movements
+        }, 1000);
+      }
+      //FIM-ALTERAÇÃO*
       return;
     }
 

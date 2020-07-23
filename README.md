@@ -9,7 +9,7 @@
 - [x] Lógica do jogo (Javascript)(o jogo está funcionando!!)
 - [x] Site no AR  **[-> CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
 - [x] Layout responsivo
-- [ ] Exibir mensagem de vitória
+- [x] Exibir mensagem de vitória
 - [x] Botão para reiniciar o jogo
 - [ ] Botão para mudar tema **(EM BREVE)**
 
@@ -21,7 +21,7 @@
 ### Celular (gif desatualizado, agora possui botão de reiniciar!)
 ![celular-gif](public/src/gif.gif)
 
-=======
+---
 ## Print da página inicial do figma
 ![index.html](public/src/paginainicial.png)
 

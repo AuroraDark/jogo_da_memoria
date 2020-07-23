@@ -97,6 +97,17 @@
         height:80px;
     }
 
+    #vitoria #container {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        font-size: 3.2vw;
+    }
+
+    #vitoria a {
+        left: calc(50% - 14.2vw);
+    }
+
 }
 
 @media (min-height: 760px) {
