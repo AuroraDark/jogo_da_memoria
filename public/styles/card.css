@@ -1,4 +1,4 @@
-.jogo div {
+.jogo .card {
   padding: 30px;
   margin: 15px;
   flex: 1;
@@ -13,6 +13,7 @@
 
 .jogo {
   align-items: center;
+  padding: 10px;
   /* margin: 10px; */
   /* top: 24px; */
   display: grid;
