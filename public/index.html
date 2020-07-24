@@ -15,16 +15,27 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/win.css" /><!--Estilo da tela de vitória-->
     <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
     <header>
       <h1>JOGO DA MEMÓRIA</h1>
       <nav>
-        <a href="/">DECKS</a>
-        <a href="/">SOBRE</a>
+        <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
       </nav>
     </header>
+    <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="vitoria">
+      <div id="container">
+        <h1>Parabéns!</h1>
+        <p>Você encontrou todos os pares em</p>
+        <h2><span id="movimentosvitoria">0</span> movimentos</h2>
+        <a href="index.html">Jogar denovo</a>
+      </div>
+    </div>
+    <!--FIM-ALTERAÇÃO*-->
     <section id="responsivo">
       <h2>Erradas <span id="movimentos2">0</span></h2>
       <!-- <button id="btn-mudartema">Mudar tema</button>
