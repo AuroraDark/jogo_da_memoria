@@ -33,6 +33,11 @@
     width: fit-content;
 }
 
+#vitoria a:hover {
+    background-color: rgb(50, 50, 50);
+    color: lightblue;
+}
+
 #vitoria p {
     color: rgb(50, 50, 50);
 }
