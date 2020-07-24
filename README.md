@@ -9,7 +9,7 @@
 - [x] Lógica do jogo (Javascript)(o jogo está funcionando!!)
 - [x] Site no AR  **[-> CLIQUE AQUI PARA VER O SITE](https://auroradark-jogodamemoria.netlify.app/)**
 - [x] Layout responsivo
-- [x] Exibir mensagem de vitória
+- [x] Exibir mensagem de vitória >>> contribuição do [JoaoSCoelho](https://github.com/JoaoSCoelho)
 - [x] Botão para reiniciar o jogo
 - [ ] Botão para mudar tema **(EM BREVE)**
 
@@ -47,4 +47,7 @@ Bom, nesse caso o jogo é **quase** assim. A única diferença é que você joga
 
 **Agradeço a todos que testaram e me deram novas ideias, com base nelas fiz e continuo fazendo alterações no projeto inicial para melhorar a experiência do jogador!** 
 
-**Autor: [@AuroraDark](https://github.com/AuroraDark) :)** 
+### CONTRIBUIDORES
+* [JoaoSCoelho](https://github.com/JoaoSCoelho) 
+
+**Autor: [AuroraDark](https://github.com/AuroraDark) :)** 
