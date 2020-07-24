@@ -98,25 +98,24 @@ footer ul a img:hover {
 }
 
 #esq a {
-    
+
     width: min-content;
     height: min-content;
     text-decoration: none;
-    background-color: black;
-    padding: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px;
+    color: rgb(50, 50, 50);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 3px solid rgb(50, 50, 50);
     margin-bottom: 20vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Righteous', cursive;
     font-weight: 500;
     font-size: 18px;
-    color:white;
     
 }
 
 #esq a:hover {
-    background-color: teal;
+    background-color: rgb(50, 50, 50);
+    color: white;
 }
 
 #esq span {

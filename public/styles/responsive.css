@@ -68,8 +68,8 @@
         background-color: black;
         text-decoration: none;
         color: white;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 600;
+        font-family: 'Righteous', cursive;
+        font-weight: lighter;
         font-size: 18px;
         padding: 10px;
         margin: 5px;
@@ -101,6 +101,7 @@
 
     .jogo {
         padding: 10px;
+
     }
 
     .jogo .card {
