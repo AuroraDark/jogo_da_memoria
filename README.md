@@ -15,15 +15,16 @@
 
 ## Prints
 
-### Desktop (imagem desatualizada, agora possui botão de reiniciar!)
-![desktop](public/src/paginidesktop.png)
+### Desktop
+![desktop](public/src/jogo da memoria2.png)
+
+### Tela de Vitória 
+![desktop-2](public/src/jogo da memoria3.png)
 
 ### Celular (gif desatualizado, agora possui botão de reiniciar!)
 ![celular-gif](public/src/gif.gif)
 
 ---
-## Print da página inicial do figma
-![index.html](public/src/paginainicial.png)
 
 ## Tecnologias (100% front-end)
 
