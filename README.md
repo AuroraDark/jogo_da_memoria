@@ -16,10 +16,10 @@
 ## Prints
 
 ### Desktop
-![desktop](public/src/jogo da memoria2.png)
+![desktop](public/src/jogodamemoria2.png)
 
 ### Tela de Vitória 
-![desktop-2](public/src/jogo da memoria3.png)
+![tela-de-vitoria](public/src/jogodamemoria3.png)
 
 ### Celular (gif desatualizado, agora possui botão de reiniciar!)
 ![celular-gif](public/src/gif.gif)
